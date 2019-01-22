@@ -15,7 +15,8 @@ export default class App extends Component {
 
   addToSavedList = movie => {
     const savedList = this.state.savedList;
-    if (!this.state.savedList.includes(movie)) {
+    const movieTitles = savedList.map(item => item.title)
+    if (!movieTitles.includes(movie.title)) {
       savedList.push(movie);
       this.setState({ savedList });
     }
