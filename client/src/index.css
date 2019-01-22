@@ -14,6 +14,11 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+
+}
+
+.movie-card-wrapper {
+  text-decoration: none;
 }
 
 .movie-director {
@@ -43,7 +48,7 @@ body {
 .saved-movie {
   margin: 0 10px;
 }
-.saved-active {
+.saved-list .active {
   color: blue;
   border: 1px solid grey;
   padding: 5px;
